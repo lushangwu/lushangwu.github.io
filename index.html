@@ -111,17 +111,12 @@
     top: 88px;
   }
   .avatar {
+    display: block;
     width: 168px;
-    height: 168px;
-    border-radius: 50%;
+    height: auto;
+    border-radius: 16px;
     background: #eef1f6;
     border: 1px solid var(--hairline);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--serif);
-    font-size: 58px;
-    color: var(--link);
     margin-bottom: 18px;
   }
   .avatar-note {
@@ -317,8 +312,7 @@
     }
     .avatar {
       width: 118px;
-      height: 118px;
-      font-size: 42px;
+      height: auto;
       margin-bottom: 0;
     }
     .side-blocks { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 28px; }
