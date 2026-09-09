@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鲁尚武 | 湖南工商大学 · 计算机学院 | 个人主页</title>
+<meta name="description" content="鲁尚武，湖南工商大学计算机学院智慧管理院士卓越班（智管 2201 班）学生，中共党员，平均绩点专业第一，国家奖学金获得者，保研推免至深圳大学。本页汇总其个人基本信息、竞赛奖励与科研成果。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a4d8f'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fff' font-family='Georgia,serif'%3E%E9%B2%81%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #1a1a1a;
+    --ink-2: #555555;
+    --ink-3: #7a7a7a;
+    --link: #1a4d8f;
+    --link-hover: #123a6b;
+    --hairline: #e6e6e6;
+    --panel: #fafafa;
+    --sidebar-w: 280px;
+    --content-max: 1160px;
+    --serif: Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+    --sans: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+    background: var(--link);
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .skip-link:focus { left: 0; }
+
+  .site-header {
+    border-bottom: 1px solid var(--hairline);
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.96);
+    z-index: 50;
+  }
+  .site-header .inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 12px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 24px;
+  }
+  .brand {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--ink);
+    letter-spacing: 0.02em;
+  }
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 22px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .site-nav a {
+    color: var(--ink-2);
+    text-decoration: none;
+    font-size: 14.5px;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 120ms ease, border-color 120ms ease;
+  }
+  .site-nav a:hover,
+  .site-nav a:focus-visible {
+    color: var(--link);
+    border-bottom-color: var(--link);
+  }
+
+  .layout {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 40px 32px 24px;
+    display: grid;
+    grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+    gap: 56px;
+    align-items: start;
+  }
+
+  /* ---------- Sidebar ---------- */
+  .sidebar {
+    position: sticky;
+    top: 88px;
+  }
+  .avatar {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    background: #eef1f6;
+    border: 1px solid var(--hairline);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--serif);
+    font-size: 58px;
+    color: var(--link);
+    margin-bottom: 18px;
+  }
+  .avatar-note {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    margin-top: 6px;
+  }
+  .side-block { margin-top: 26px; }
+  .side-title {
+    font-family: var(--serif);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--ink-3);
+    margin: 0 0 10px;
+    font-weight: 700;
+  }
+  .side-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14.5px;
+    color: var(--ink-2);
+  }
+  .side-list li {
+    padding: 7px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .side-list li:last-child { border-bottom: none; }
+  .side-list .k { color: var(--ink-3); display: block; font-size: 12.5px; }
+  .side-list a { color: var(--link); text-decoration: none; }
+  .side-list a:hover { text-decoration: underline; }
+  .muted-note { color: var(--ink-3); font-size: 13px; }
+
+  /* ---------- Main ---------- */
+  .main { min-width: 0; }
+
+  .name-row h1 {
+    font-family: var(--serif);
+    font-size: clamp(30px, 4.2vw, 44px);
+    line-height: 1.2;
+    margin: 0 0 6px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+  .title-line {
+    font-size: 17px;
+    color: var(--ink-2);
+    margin: 0 0 2px;
+  }
+  .title-line sub { display: block; font-size: 14px; color: var(--ink-3); margin-top: 2px; }
+  .lede {
+    margin: 22px 0 0;
+    font-size: 16px;
+    color: var(--ink);
+    max-width: 72ch;
+  }
+  .lede strong { font-weight: 600; }
+
+  .section {
+    margin-top: 52px;
+    border-top: 1px solid var(--hairline);
+    padding-top: 32px;
+    scroll-margin-top: 84px;
+  }
+  .section > h2 {
+    font-family: var(--serif);
+    font-size: 24px;
+    margin: 0 0 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .section > h2 .en {
+    font-family: var(--sans);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-3);
+    font-weight: 400;
+  }
+
+  .news-list, .award-list, .project-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .news-list li {
+    display: grid;
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--hairline);
+    font-size: 15px;
+  }
+  .news-list .date { color: var(--ink-3); font-size: 13.5px; padding-top: 2px; }
+  .news-list .tag {
+    display: inline-block;
+    font-size: 11.5px;
+    line-height: 1;
+    padding: 3px 8px;
+    border-radius: 2px;
+    background: #eef1f6;
+    color: var(--link);
+    margin-right: 8px;
+    vertical-align: 1px;
+  }
+
+  .award-list li {
+    display: grid;
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 14px;
+    padding: 13px 0;
+    border-bottom: 1px dashed var(--hairline);
+    font-size: 15px;
+  }
+  .award-list .year { color: var(--link); font-family: var(--serif); font-size: 15px; }
+  .award-list .name { font-weight: 600; }
+  .award-list .level {
+    display: inline-block;
+    font-size: 12px;
+    color: #fff;
+    background: var(--ink);
+    border-radius: 2px;
+    padding: 2px 8px;
+    margin-left: 8px;
+    vertical-align: 1px;
+  }
+  .award-list .level.gold { background: #8a6d1d; }
+  .award-list .level.silver { background: #6f7478; }
+  .award-list .detail { color: var(--ink-2); font-size: 13.5px; margin-top: 3px; }
+  .award-list .src { color: var(--ink-3); font-size: 12.5px; margin-top: 2px; }
+
+  .project-list li { padding: 14px 0; border-bottom: 1px dashed var(--hairline); }
+  .project-list .name { font-weight: 600; font-size: 15.5px; }
+  .project-list .desc { color: var(--ink-2); font-size: 14.5px; margin-top: 3px; max-width: 74ch; }
+  .project-list .meta { color: var(--ink-3); font-size: 12.5px; margin-top: 3px; }
+
+  .note-box {
+    margin-top: 18px;
+    padding: 14px 18px;
+    background: var(--panel);
+    border-left: 3px solid var(--hairline);
+    border-radius: 0 2px 2px 0;
+    font-size: 13.5px;
+    color: var(--ink-2);
+    max-width: 76ch;
+  }
+
+  .source-list {
+    font-size: 12.5px;
+    color: var(--ink-3);
+    margin: 10px 0 0;
+    padding-left: 18px;
+    max-width: 76ch;
+  }
+  .source-list li { margin: 2px 0; }
+
+  /* ---------- Footer ---------- */
+  .site-footer {
+    border-top: 1px solid var(--hairline);
+    margin-top: 64px;
+  }
+  .site-footer .inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 24px 32px 40px;
+    font-size: 13px;
+    color: var(--ink-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+    justify-content: space-between;
+  }
+
+  a { color: var(--link); }
+  a:hover { color: var(--link-hover); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px) {
+    .layout {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 28px;
+      padding: 28px 20px 20px;
+    }
+    .sidebar {
+      position: static;
+      display: grid;
+      grid-template-columns: 128px minmax(0, 1fr);
+      gap: 0 22px;
+      align-items: start;
+    }
+    .avatar {
+      width: 118px;
+      height: 118px;
+      font-size: 42px;
+      margin-bottom: 0;
+    }
+    .side-blocks { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 28px; }
+    .site-header .inner { padding: 12px 20px; }
+    .site-footer .inner { padding: 22px 20px 32px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="#top">鲁尚武 · 个人主页</a>
+    <nav aria-label="页面导航">
+      <ul class="site-nav">
+        <li><a href="#about">简介</a></li>
+        <li><a href="#news">动态</a></li>
+        <li><a href="#awards">竞赛奖励</a></li>
+        <li><a href="#research">科研成果</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" id="top" aria-label="个人基本信息">
+<div>
+  <img class="avatar" 
+       src="https://workbench.20040424.site/api/v1/files/83b1302b-6c61-4cdf-86bb-f31ed1958cff/download" 
+       alt="个人头像" 
+       aria-hidden="true" />
+       
+</div>
+    <div class="side-blocks">
+      <div class="side-block">
+        <p class="side-title">基本信息</p>
+        <ul class="side-list">
+          <li><span class="k">姓名</span>鲁尚武（男）</li>
+          <li><span class="k">学校</span>深圳大学</li>
+          <li><span class="k">学院</span>人工智能学院</li>
+          <li><span class="k">班级</span>人工智能专硕3班</li>
+          <li><span class="k">政治面貌</span>中共党员</li>
+          <li><span class="k">现任职务</span>无</li>
+        </ul>
+      </div>
+      <div class="side-block">
+        <p class="side-title">联系</p>
+        <ul class="side-list">
+          <li><span class="k">邮箱</span><span class="muted-note">2610670099@mails.szu.edu.cn</span></li>
+          <li><span class="k">位置</span>深圳大学粤海校区</li>
+          <li><span class="k">技术笔记</span>https://blog.csdn.net/m0_73867959?type=blog</li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <section class="name-row" aria-labelledby="h1-name">
+      <h1 id="h1-name">鲁尚武</h1>
+      <p class="title-line">湖南工商大学 · 计算机学院 · 智慧管理院士卓越班（智管 2201 班）学生
+        <sub>国家奖学金获得者 · 平均绩点专业第一 · 保研推免至深圳大学</sub>
+      </p>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="h2-about">
+      <h2 id="h2-about">简介 <span class="en">About</span></h2>
+      <p class="lede">
+        我是鲁尚武，湖南工商大学计算机学院智慧管理院士卓越班（智管 2201 班）本科生，中共党员，曾担任计算机学院学生第三党支部副书记与班级学习委员。本科期间平均绩点位列专业第一，曾获国家奖学金，并作为学校首批获得保研资格的学子之一推免至深圳大学。
+      </p>
+      <p class="lede">
+        自主持学的路上，我一直奉行"规划、执行、复盘"的闭环节奏。学习上善于用四象限法为任务排序，竞赛上坚持"以赛促学"——通过 CCF 全国测试开发大赛、"挑战杯"等高水平赛事锤炼工程能力；学生工作中，我牵头组建"编程互助小组"，独立开发学院党支部党建网站，努力用专业能力服务集体。我最喜欢的一句话是："在那之前，要多想。"
+      </p>
+    </section>
+
+    <section class="section" id="news" aria-labelledby="h2-news">
+      <h2 id="h2-news">动态与荣誉 <span class="en">News &amp; Honors</span></h2>
+      <ul class="news-list">
+        <li>
+          <span class="date">2025-09</span>
+          <span><span class="tag">荣誉</span>入围湖南工商大学 2025 年国家奖学金推荐名单</span>
+        </li>
+        <li>
+          <span class="date">2025-09</span>
+          <span><span class="tag">升学</span>作为我校首批获得保研资格的学子之一，成功保研推免至深圳大学</span>
+        </li>
+        <li>
+          <span class="date">2025</span>
+          <span><span class="tag">竞赛</span>获 CCF 中国计算机应用技术大赛·全国测试开发大赛国家级一等奖</span>
+        </li>
+        <li>
+          <span class="date">2024</span>
+          <span><span class="tag">竞赛</span>作为团队成员获湖南省"挑战杯"大学生创业计划竞赛银奖（项目《"池"之以"衡"——磷酸铁锂动力电池主动均衡智能管理系统》）
+            <span class="muted-note">（该项目于 2024-05 经校级评审拟入围省赛）</span></span>
+        </li>
+        <li>
+          <span class="date">在校期间</span>
+          <span><span class="tag">荣誉</span>多次获校级三好学生、优秀学生干部、优秀党员；带领班级获评院级"优秀学风班级"</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="awards" aria-labelledby="h2-awards">
+      <h2 id="h2-awards">竞赛奖励 <span class="en">Awards &amp; Competitions</span></h2>
+      <ul class="award-list">
+        <li>
+          <span class="year">国家级</span>
+          <span>
+            <span class="name">CCF 中国计算机应用技术大赛 · 全国测试开发大赛（CCF CAT）</span>
+            <span class="level gold">一等奖</span>
+            <p class="detail">由中国计算机学会（CCF）主办的全国性技术竞赛，聚焦测试开发、Web 与接口自动化测试等综合能力。</p>
+            <p class="src">来源：湖南工商大学校团委公众号《楚枫英才 NO.129》"获 CCF 测试开发大赛国家级一等奖"。</p>
+          </span>
+        </li>
+        <li>
+          <span class="year">省级</span>
+          <span>
+            <span class="name">湖南省大学生程序设计大赛</span>
+            <span class="level gold">一等奖</span>
+            <p class="detail">省级程序设计赛事一等奖。</p>
+            <p class="src">来源：《楚枫英才 NO.129》"湖南省大学生程序设计大赛一等奖"。</p>
+          </span>
+        </li>
+        <li>
+          <span class="year">省级</span>
+          <span>
+            <span class="name">湖南省"挑战杯"大学生创业计划竞赛</span>
+            <span class="level silver">银奖</span>
+            <p class="detail">参赛项目《"池"之以"衡"——磷酸铁锂动力电池主动均衡智能管理系统》，鲁尚武为团队成员（指导老师：杨佳、廖毅勇；负责人：钟雨轩）。</p>
+            <p class="src">来源：湖南工商大学共青团委员会 2024-05-22《第十一届"挑战杯"湖南省大学生创业计划竞赛拟入围省赛项目公示》；《楚枫英才 NO.129》。</p>
+          </span>
+        </li>
+        <li>
+          <span class="year">赛区</span>
+          <span>
+            <span class="name">中国大学生计算机设计大赛</span>
+            <span class="level silver">中南赛区三等奖</span>
+            <p class="detail">中南赛区三等奖。</p>
+            <p class="src">来源：《楚枫英才 NO.129》"中国大学生计算机设计大赛中南赛区三等奖"。</p>
+          </span>
+        </li>
+      </ul>
+      <div class="note-box">
+        另有多个校级、院级荣誉（校级三好学生、优秀学生干部、优秀党员、院级"优秀学风班级"等）；曾代表学院参加"曙光杯"竞赛。
+      </div>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="h2-research">
+      <h2 id="h2-research">科研成果与工程实践 <span class="en">Research &amp; Projects</span></h2>
+      <ul class="project-list">
+        <li>
+  <!-- 将 span 改为 a 标签，并添加 href 跳转地址 -->
+  <a class="name" href="https://kns.cnki.net/kcms2/article/abstract?v=9FozRGRw00KJXh5Ivv_kopFzDDhfXPEWHtrOJ3Sgf6zNmxPSoJ9a_lrn6E2A0kYoK63ZEWx4MdJi3XOdBCwSZEvo1VUVUh3SFnxJMu5EaU-Io1VI40Fm7NWJi19dIDemzgHvhuRpKgXXgIVkYMNlqw==&uniplatform=NZKPT&language=CHS" target="_blank" rel="noopener noreferrer">大语言模型驱动的图书馆咨询服务系统</a>
+  
+  <p class="desc">为解决采用传统LangChain架构构建咨询服务系统时存在的高复杂性、高开销和低效率等问题，文章提出一种基于Assistant API的智能图书馆咨询服务系统。该系统利用Assistant API快速接入大语言模型，并通过Function Call实时获取数据，实现面向智能图书馆咨询场景的智能问答功能。</p>
+  <p class="meta">类型：湖南省大学生创新创业训练计划项目(S202410554119)</p>
+</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="inner">
+
+  </div>
+</footer>
+</body>
+</html>
